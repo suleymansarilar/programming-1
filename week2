@@ -1,0 +1,153 @@
+# Operations on numbers:
+
+### Task 1: 
+
+Lamborghini Aventador has a wheel-base of 2.6 m and an average track-width of 1.7 m. 
+The Foot-print of a car is the area covered by the four points of the car's wheels touching the ground and
+is given by the equation foot-print = (wheel-base * track-width). 
+
+Your task is to create two variables namely track-width and wheel-base and assign respective values to them. 
+Write an equation to calcuate the foot-print and print the result.
+
+**Note:** Keep in mind the rules for assigning names for variables.
+
+# Your code below:
+# -------------------
+
+wheel_base = 2.6
+track_width = 1.7
+
+foot_print = (wheel_base * track_width)
+
+print(foot_print)
+
+### Task 2: 
+
+Time to collision (TTC) of a vehicle is the time available for the vehicle to brake or 
+execute a manoeuvre to avoid collision with the object in front.  It is given by a simple formula, 
+TTC = distance of separation / current velocity of the vehicle. 
+Given the distance of separation between your Ferrari Roma and the Mini Cooper in front is 5 m and you are travelling at 2 m/s. 
+Calculate the TTC and print it.
+
+**Note:** Keep in mind the rules for assigning names for variables.
+
+# Your code below:
+# -------------------
+
+distance = 5
+velocity = 2
+
+time_to_collision = distance / velocity
+
+print(time_to_collision)
+
+### Task 3:
+
+The above task gives a value in Decimals. For the present task, try to get TTC value without a remainder.
+
+# Your code below:
+# -------------------
+
+distance = 5
+velocity = 2
+
+time_to_collision = distance // velocity
+
+print(time_to_collision)
+
+### Task 4:
+
+You have 10 friends and 2 Bentley Continental GTs. You are going to a party and each Bentley Continental GT can accommodate 4 people. 
+How many of your friends will have to be left behind and will have to catch a bus? 
+
+**Note:** You don't have to create any variables here. Use the print statement to display the result.
+
+**Hint:** Solve it using the modulus **%** operator
+
+# Your code below:
+# -------------------
+
+print(10 % (4*2))
+
+### Task 5:
+
+You are a billionaire who owns 10 BMW S1000RRs. You have 8 best friends and would like to gift each of them a BMW S1000RR. 
+After this how many BMW S1000RRs will be left with you?
+
+**Note:** You don't have to create any variables here. Use the print statement to display the result.
+
+# Your code below:
+# -------------------
+
+print(10-8)
+
+
+# String operations:
+
+### Task 1:
+
+Concatenate three string values namely, I am studying** , \<your course here\> and at THI.
+
+# Your code below:
+# -------------------
+
+print("I am studying" + " " + "International Automotive Engineering" + " " + "at Technische Hochschule Ingolstadt")
+
+### Task 2:
+
+Create a variable named sample and assign a string value of Yo to it. Now multiply the string with 4 and print the value.
+
+# Your code below:
+# -------------------
+
+sample = "Yo"
+print(sample*4)
+
+### Task 3:
+
+Create a variable called my_string and give it a string value I am in love with "Python". Print the string.
+
+**Note:** Please pay attention to the double quotes " ". How will you handle it?
+
+# Your code below:
+# -------------------
+
+## Solution:
+print("I am in love with \"Python\"")
+
+# Operator Precedence:
+
+The operator precedence in Python follows the standard BODMAS (Brackets, Order, Division, Multiplication, Addition and Subtraction)** rule. 
+Other names are also used namely PEMDAS (Parenthesis, Exponent, Multiplication, Division, Addition and Subtraction) or BIDMAS 
+(Brackets, Indices, Division, Multiplication, Addition and Subtraction) depending in the country of residence.
+
+Try to solve the following tasks by hand and also using Python to see if Python is getting the results right :
+
+### Task 1:
+
+The formula for tire diameter is given as  tire diameter = 2 x (section width x aspect ratio)/25.4 + rim diameter. Let section_width be 235 mm, aspect_ratio be 0.35 
+amd rim_diameter be **19** inch. Write an expression to calcuate the **tire_diameter** and print the value.
+
+# Your code below:
+# -------------------
+
+tire_diameter = 2 * (235 * 0.35) / 25.4 + 19
+print(tire_diameter
+
+### Task 2:
+
+An Audi A8 has a bore of 0.845m and a stroke of 0.89m. The Volume of the cylinder is given 
+be volume = (3.14/4)\* bore** * stroke. Calculate the volume of the cylinder.
+
+**Hint:** Values can be directly substituted without any conversion.
+
+# Your code below:
+# -------------------
+
+bore = 0.845
+stroke = 0.89
+
+volume = (3.14/4) * (bore**2) * stroke 
+print(volume)
+
+**Hint:** Values can be directly substituted without any conversion.
