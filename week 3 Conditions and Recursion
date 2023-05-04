@@ -1,0 +1,89 @@
+### Write a compare function that takes two values, x and y, and returns 1 if x > y, 0
+if x == y, and -1 if x < y.
+• Write a function is between(x, y, z) that returns True if x =< y =< z or False
+otherwise.
+• Write a function that takes two points given by their coordinates x0, x1 and y0,
+y1 as arguments, and returns the euclidean distance between them.
+
+# Solution
+def compare(x, y):
+    if x > y:
+        return 1
+    elif x == y:
+        return 0
+    else: # x < y
+        return -1
+
+result = compare(2, 1)
+print(result)
+
+def is_between(x, y, z):
+    if x <= y and y <= z:
+        return True
+    else:
+        return False
+
+result = is_between(2, 3, 4)
+print(result)
+result = is_between(3, 2, 4)
+print(result)
+
+def is_between_alternative(x, y, z):
+    # return x <= y and y <= z
+    return x <= y <= z
+
+result = is_between_alternative(2, 3, 4)
+print(result)
+result = is_between_alternative(3, 2, 4)
+print(result)
+
+import math
+
+def distance(x0, x1, y0, y1):
+    d = math.sqrt((x0 - y0) ** 2 + (x1 - y1) ** 2)
+    return d
+
+dist = distance(1, 1, 2, 2)
+print(dist)
+print(dist - math.sqrt(2))
+
+
+### Write a recursive function factorial(n) that takes n as an argument, and
+returns the factorial n!. Note that 0! = 1 (base case) and n! = n . (n - 1)!
+
+# Solution
+# n! = n * (n - 1)!
+# 1! = 1
+# factorial(n) = n * factorial(n - 1) = n * (n - 1) * factorial(n - 2) =
+
+def factorial(n):
+    # base case 1! = 1
+    if n == 1:
+        return 1
+    # otherwise n > 1, then n! = n * (n - 1)!
+    else:
+        return n * factorial(n - 1)
+
+result = factorial(3) # 3 * 2 * 1 = 6
+print(result)
+
+# fib(n) = fib(n - 1) + fib(n - 2)
+# fib(n - 1) = fib(n - 2) + fib(n - 3)
+# ...
+# fib(0) = 0
+# fib(1) = 1
+def fibonacci(n):
+    # base case A: n == 0
+    if n == 0:
+        return 0
+    # base case B: n == 1
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+result = fibonacci(3)
+print(result)
+print('fibonacci')
+for i in range(10):
+    print(fibonacci(i))
